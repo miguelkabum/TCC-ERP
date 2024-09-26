@@ -10,7 +10,7 @@ const Login = () => {
           <img src={imgLogin} alt="" />
         </div>
 
-        <div id="loginParts">
+        <div id={styles.loginParts}>
           <h1>Login</h1>
 
           <form action="">
