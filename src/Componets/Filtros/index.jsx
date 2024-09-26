@@ -1,10 +1,12 @@
 import React from "react";
-import styles from "./style.modules.css";
+import Style from "./style.module.css";
 
 const index = () => {
   return (
     <>
-      <h1>oi</h1>
+      <div className={Style.container}>
+        
+      </div>
     </>
   );
 };
