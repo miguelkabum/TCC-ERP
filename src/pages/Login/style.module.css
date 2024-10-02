@@ -1,25 +1,36 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
 h1{
     font-size: 96px;
     color: #16423C;
+
+    margin-bottom: 2rem;
   }
   
+
   #main{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #E9EFEC;
+    background-color: #F5F5F5;
     gap: 80px;
     font-family: "Inter", sans-serif;
   }
   #img img{
     width: 420px;
-    height: 537px;
+
   }
 
   #container, #img{
   background-color: rgb(255, 255, 255);
-  width: 1000px;
+  width: 60%;
   height: 630px;
   display: flex;
   align-items: center;
@@ -28,6 +39,11 @@ h1{
   gap: 25px;
   
   }
+
+  #container{
+    padding: 2rem;
+  }
+  
   #loginParts{
     display: flex;
     flex-direction: column;
@@ -47,7 +63,9 @@ h1{
   .input{
     display: flex;
     flex-direction: column;
-    gap: 17px;
+
+    margin-bottom: 1rem;  
+    padding: 0.5rem 1rem;
   }
   input{
     width: 460px;
@@ -70,6 +88,8 @@ h1{
     text-decoration: none;
     color: inherit;
     color: #6A9C89;
+
+    text-align: center;
   }
   
   button{
@@ -79,6 +99,15 @@ h1{
     background-color: #16423C;
     font-size: 23px;
     color: white;
-    margin-top: 25px;
+    margin-top: 0.6rem;
+    margin-bottom: 0.4rem;
   }
   
+  .other{
+    margin-top: 0.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+  }

@@ -1,6 +1,8 @@
 h1{
     font-size: 96px;
     color: #16423C;
+
+    margin-bottom: 1rem;
   }
   
   #main{
@@ -14,20 +16,22 @@ h1{
   }
   #img img{
     width: 420px;
-    height: 537px;
   }
 
   #container, #img{
   background-color: rgb(255, 255, 255);
-  width: 1000px;
+  width: 60%;
   height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 12px;
-  gap: 25px;
-  padding: 25px 0;
+
   
+  }
+
+  #container{
+    padding: 2rem;
   }
   #loginParts{
     display: flex;
@@ -47,7 +51,8 @@ h1{
   .input{
     display: flex;
     flex-direction: column;
-    gap: 5px;
+
+    margin-bottom: 1rem;
   }
   input{
     width: 460px;
@@ -55,14 +60,17 @@ h1{
     border: none;
     background-color: #E9EFEC;
     border-radius: 15px;
-    padding: 12px;
+    padding: 0.5rem 1rem;
     font-size: 23px;
+    
   
   }
   
   .textLabel{
     align-self: start;
     font-size: 23px;
+
+    margin-bottom: 0.4rem;
   }
   
   a{
@@ -79,6 +87,7 @@ h1{
     background-color: #16423C;
     font-size: 23px;
     color: white;
-    margin-top: 25px;
+
+    margin-top: 0.6rem;
   }
   

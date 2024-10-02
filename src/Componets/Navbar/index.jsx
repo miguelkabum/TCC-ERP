@@ -4,12 +4,11 @@ import styles from './style.module.css'
 const index = () => {
   return (
     <header>
-        <div className={styles.logo}></div>
+        
 
         <ul className={styles.mainNav}>
           
-          <li id={styles.home}>
-              {/* Home */}
+          <li id={styles.logo}>
              <img src="../../../src//assets/icons/logoExample.png" alt="" />
           </li>
           <li className={styles.suprimentos}>Suprimentos</li>

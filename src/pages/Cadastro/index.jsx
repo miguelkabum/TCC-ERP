@@ -1,12 +1,12 @@
 import styles from "./style.module.css";
-import imgLogin from "../../assets/imgLogin.jpg";
+import imgCadastro from "../../assets/imgs/imgCadastro.jpg"
 
 const Cadastro = () => {
   return (
     <div id={styles.main}>
       <div id={styles.container}>
         <div id={styles.img}>
-          <img src={imgLogin} alt="" />
+          <img src={imgCadastro} alt="" />
         </div>
 
         <div id={styles.loginParts}>

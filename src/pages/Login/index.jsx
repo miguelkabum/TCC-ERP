@@ -1,5 +1,5 @@
 import styles from './style.module.css'
-import imgLogin from '../../assets/imgLogin.jpg'
+import imgLogin from '../../assets/imgs/imgLogin.jpg'
 
 const Login = () => {
   return(
@@ -44,9 +44,13 @@ const Login = () => {
 
           <button>Entrar</button>
 
-          <a href="">Esqueceu sua senha?</a>
+          <a href=''>Esqueceu sua senha?</a>
+          <div className={styles.other}>
+          <p>Ainda não tem um cadastro?</p>
+          <a href="">Inscreva-se agora!</a>
 
-          <a href="">Ainda não tem um cadastro? Inscreva-se agora!</a>
+          </div>
+
         </div>
       </div>
     </div>

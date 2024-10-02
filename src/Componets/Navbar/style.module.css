@@ -82,6 +82,10 @@ header *{
     transition: 0.4s ease-in-out;
 
 }
+
+#logo::before {
+    content: none;
+}
 .mainNav > *:hover::before{
     width: 100% ;
     
