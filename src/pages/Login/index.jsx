@@ -1,6 +1,8 @@
 import styles from './style.module.css'
 import imgLogin from '../../assets/imgs/imgLogin.jpg'
 
+import {Link} from 'react-router-dom'
+
 const Login = () => {
   return(
     <div id={styles.main}>
@@ -44,11 +46,13 @@ const Login = () => {
 
           <button>Entrar</button>
 
-          <a href=''>Esqueceu sua senha?</a>
+          <p id={styles.link}>Esqueceu sua senha?</p>
           <div className={styles.other}>
           <p>Ainda não tem um cadastro?</p>
-          <a href="">Inscreva-se agora!</a>
 
+          <Link to='/Cadastro'>
+            <p id={styles.link}>Inscreva-se agora!</p>
+          </Link>
           </div>
 
         </div>

@@ -83,13 +83,14 @@ h1{
     font-size: 23px;
   }
   
-  a{
+  #link{
     font-size: 18px;
     text-decoration: none;
     color: inherit;
     color: #6A9C89;
 
     text-align: center;
+    cursor: pointer;
   }
   
   button{

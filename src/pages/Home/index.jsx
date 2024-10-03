@@ -7,7 +7,7 @@ import Navbar from '../../Componets/Navbar/index.jsx'
 const index = () => {
   return (
     <div>
-        <Navbar/>
+        
     </div>
   )
 }
