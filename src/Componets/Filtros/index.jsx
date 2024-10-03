@@ -4,11 +4,34 @@ import LabelInput from "./LabelInput.jsx";
 import { useState } from "react";
 
 const index = () => {
-  const {title, setTitle} = useState("Abroba")
+  const { title, setTitle } = useState("Abroba");
   return (
     <>
       <div className={Style.container}>
-        <LabelInput id="title" lbl="Nome de usuário: " value={title} setValue={setTitle}/>
+        <div id={Style.titleFiltro}>
+          <span>icone</span>
+          <p>Filtros</p>
+        </div>
+        <div className={Style.selects}>
+          <LabelInput
+            id="title"
+            lbl="Situação "
+            value={title}
+            setValue={setTitle}
+          />
+          <LabelInput
+            id="title"
+            lbl="Vendedor "
+            value={title}
+            setValue={setTitle}
+          />
+          <LabelInput
+            id="title"
+            lbl="Telefone/Celular "
+            value={title}
+            setValue={setTitle}
+          />
+        </div>
       </div>
     </>
   );
