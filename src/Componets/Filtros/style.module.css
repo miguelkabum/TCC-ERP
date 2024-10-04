@@ -1,24 +1,119 @@
-*{
+/* Reset básico */
+* {
+    margin: 0;
     padding: 0;
-    /* background-color: black; */
-}
-#container{
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    line-height: 1.6;
+  }
+  
+  .container {
     display: flex;
-    flex-direction: column;
-    background-color: rgb(184, 199, 176);
+    flex-wrap: wrap;
+    min-height: 100vh;
+  }
+  
+  .filterPanel {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-right: 1px solid #ddd;
+  }
+  
+  .filterPanel h2 {
+    margin-bottom: 20px;
+  }
+  
+  .filterPanel div {
+    margin-bottom: 15px;
+  }
+  
+  .filterPanel label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .filterPanel select,
+  .filterPanel input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .clientTable {
+    flex: 3 1 500px;
+    padding: 20px;
+    min-width: 300px;
+    width: 100%;
+  }
+  
+  .container header {
+    display: flex;
+    justify-content: space-between;
+    width: 70vw;
     align-items: center;
-    width: 300px;
-    gap: 6px;
-    padding: 15px 0; 
-    border-radius: 12px;
-    && label {
-        align-self:flex-start;
+    margin-bottom: 20px;
+  }
+  
+  .Container header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+.addClient {
+    padding: 10px 20px;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+.addClient:hover {
+    background-color: #333;
+  }
+  .container{
+    display: flex;
+  }
+  
+  
+  /* Responsividade para telas menores */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
     }
-}
-
-.select {
-   border-radius: 8px;
-   border: none;
-   height: 34px;
-   width: 210px;
-}
+  
+    .filter-panel {
+      border-right: none;
+      border-bottom: 1px solid #ddd;
+      padding: 10px;
+    }
+  
+    .client-table header h1 {
+      font-size: 1.25rem;
+    }
+  }
+  
+  /* Responsividade para telas muito pequenas (smartphones) */
+  @media (max-width: 480px) {
+    .filter-panel {
+      padding: 10px 5px;
+    }
+  
+    .filter-panel div {
+      margin-bottom: 10px;
+    }
+  
+    .client-table {
+      padding: 10px;
+    }
+  
+    }

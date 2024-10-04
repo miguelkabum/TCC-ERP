@@ -10,22 +10,22 @@ const Cadastro = () => {
         </div>
 
         <div id={styles.loginParts}>
-          <h1>Cadastro</h1>
+          <h1 id={styles.title}>Cadastro</h1>
 
-          <form action="">
+          <form id={styles.formulario} action="">
             <div className={styles.input}>
               <label className={styles.textLabel} htmlFor="">
                 Informe seu nome:
               </label>
 
-              <input type="text" />
+              <input className={styles.inputBox} type="text" />
             </div>
             <div className={styles.input}>
               <label className={styles.textLabel} htmlFor="">
                 Digite seu melhor e-mail:
               </label>
 
-              <input type="text" />
+              <input className={styles.inputBox} type="text" />
             </div>
 
             <div className={styles.input}>
@@ -33,18 +33,18 @@ const Cadastro = () => {
                 Crie uma nova senha:
               </label>
 
-              <input type="Password" />
+              <input className={styles.inputBox} type="Password" />
             </div>
             <div className={styles.input}>
               <label className={styles.textLabel} htmlFor="">
                 Digite a senha novamente:
               </label>
 
-              <input type="Password" />
+              <input className={styles.inputBox} type="Password" />
             </div>
           </form>
 
-          <button>Prosseguir</button>
+          <button id={styles.bnt}>Prosseguir</button>
         </div>
       </div>
     </div>

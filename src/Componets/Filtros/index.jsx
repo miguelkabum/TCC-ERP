@@ -1,39 +1,59 @@
 import React from "react";
-import Style from "./style.module.css";
-import LabelInput from "./LabelInput.jsx";
 import { useState } from "react";
+import style from "./style.module.css"
 
 const index = () => {
-  const { title, setTitle } = useState("Abroba");
+  const [filter, setFilter] = useState({
+    situacao: 'Todos',
+    vendedor: 'Todos',
+    telefone: 'Todos',
+    estado: 'Sp',
+    municipio: 'Todos',
+  });
+
+  const handleFilterChange = (e) => {
+    setFilter({ ...filter, [e.target.name]: e.target.value });
+  };
+
   return (
-    <>
-      <div className={Style.container}>
-        <div id={Style.titleFiltro}>
-          <span>icone</span>
-          <p>Filtros</p>
+    <div className={style.container}>
+      <aside className={style.filterPanel}>
+        <h2>Filtros</h2>
+        <div>
+          <label>Situação</label>
+          <select name="situacao" value={filter.situacao} onChange={handleFilterChange}>
+            <option>Todos</option>
+            <option>Ativo</option>
+            <option>Inativo</option>
+          </select>
         </div>
-        <div className={Style.selects}>
-          <LabelInput
-            id="title"
-            lbl="Situação "
-            value={title}
-            setValue={setTitle}
-          />
-          <LabelInput
-            id="title"
-            lbl="Vendedor "
-            value={title}
-            setValue={setTitle}
-          />
-          <LabelInput
-            id="title"
-            lbl="Telefone/Celular "
-            value={title}
-            setValue={setTitle}
-          />
+        <div>
+          <label>Vendedor</label>
+          <select name="vendedor" value={filter.vendedor} onChange={handleFilterChange}>
+            <option>Todos</option>
+            <option>Vendedor 1</option>
+            <option>Vendedor 2</option>
+          </select>
         </div>
-      </div>
-    </>
+        <div>
+          <label>Telefone / Celular</label>
+          <input name="telefone" value={filter.telefone} onChange={handleFilterChange} placeholder="Todos" />
+        </div>
+        <div>
+          <label>Estado</label>
+          <input name="estado" value={filter.estado} onChange={handleFilterChange} placeholder="Sp" />
+        </div>
+        <div>
+          <label>Município</label>
+          <input name="municipio" value={filter.municipio} onChange={handleFilterChange} placeholder="Todos" />
+        </div>
+        <button className={style.addClient}>Filtrar</button>
+      </aside>
+      <header>
+        <h1>Cliente</h1>
+        <button className={style.addClient}>+ Incluir Cliente</button>
+      </header>
+    </div>
   );
 };
 export default index;

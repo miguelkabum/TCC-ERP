@@ -13,9 +13,9 @@ const Login = () => {
         </div>
 
         <div id={styles.loginParts}>
-          <h1>Login</h1>
+          <h1 id={styles.title}>Login</h1>
 
-          <form action="">
+          <form id={styles.formulario} action="">
 
             <div className={styles.input}>
 
@@ -25,7 +25,7 @@ const Login = () => {
               Usuário ou e-mail
             </label>
 
-            <input type="text" />
+            <input className={styles.InputBox} type="text" />
 
             </div>
 
@@ -38,13 +38,13 @@ const Login = () => {
               Senha
             </label>
 
-            <input type="Password" />
+            <input className={styles.inputBox} type="Password" />
 
             </div>
 
           </form>
 
-          <button>Entrar</button>
+          <button id={styles.btn}>Entrar</button>
 
           <p id={styles.link}>Esqueceu sua senha?</p>
           <div className={styles.other}>

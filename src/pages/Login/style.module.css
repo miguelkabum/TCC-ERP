@@ -6,7 +6,7 @@
 
 
 
-h1{
+#title{
     font-size: 96px;
     color: #16423C;
 
@@ -52,7 +52,7 @@ h1{
     gap: 8px;
   }
   
-  form{
+  #formulario{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -67,7 +67,7 @@ h1{
     margin-bottom: 1rem;  
     padding: 0.5rem 1rem;
   }
-  input{
+  #inputBox{
     width: 460px;
     height: 60px;
     border: none;
@@ -93,7 +93,7 @@ h1{
     cursor: pointer;
   }
   
-  button{
+  #bnt{
     width: 295px;
     height: 75px;
     border-radius: 15px;
