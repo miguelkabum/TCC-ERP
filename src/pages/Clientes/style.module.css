@@ -1,0 +1,29 @@
+.container header {
+  display: flex;
+  justify-content: space-between;
+  width: 85vw;
+  padding: 15px;
+  align-items: start;
+}
+
+.Container header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.addClient {
+  padding: 10px 20px;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.addClient:hover {
+  background-color: #333;
+}
+.container{
+  display: flex;
+}

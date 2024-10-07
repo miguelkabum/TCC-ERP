@@ -49,10 +49,6 @@ const index = () => {
         </div>
         <button className={style.addClient}>Filtrar</button>
       </aside>
-      <header>
-        <h1>Cliente</h1>
-        <button className={style.addClient}>+ Incluir Cliente</button>
-      </header>
     </div>
   );
 };
