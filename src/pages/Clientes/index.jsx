@@ -1,16 +1,39 @@
-import React from 'react'
-import Filtros from "../../components/Filtros/index.jsx"
-import Style from "./style.module.css"
+import React from "react";
+import Filtros from "../../components/Filtros/index.jsx";
+import Style from "./style.module.css";
+import DataGrid from "../../components/DataGridDemo/index.jsx";
+import Box from "@mui/material/Box";
+import TextField from "@mui/material/TextField";
 const Clientes = () => {
   return (
-    <div className={Style.container}>
+    <div className={Style.box}>
       <Filtros />
-      <header>
-        <h1>Cliente</h1>
-        <button className={Style.addClient}>+ Incluir Cliente</button>
-      </header>
+      <div className={Style.container}>
+        <header>
+          <h1>Cliente</h1>
+          <div id={Style.options}>
+            <Box
+              component="form"
+              sx={{ "& > :not(style)": { m: 1, width: "25ch" } }}
+              noValidate
+              autoComplete="off"
+            >
+              <TextField
+                id="outlined-basic"
+                label="Pesquise um cliente"
+                variant="outlined"
+              />
+              <button className={Style.pesquisarClient}>Pesquisar</button>
+            </Box>
+            <button className={Style.addClient}>+ Incluir Cliente</button>
+          </div>
+        </header>
+        <main>
+          <DataGrid />
+        </main>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Clientes
+export default Clientes;
