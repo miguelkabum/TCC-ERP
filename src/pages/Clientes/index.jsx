@@ -17,11 +17,13 @@ const Clientes = () => {
               sx={{ "& > :not(style)": { m: 1, width: "25ch" } }}
               noValidate
               autoComplete="off"
+              style={{display: "flex"}}
             >
               <TextField
                 id="outlined-basic"
                 label="Pesquise um cliente"
                 variant="outlined"
+                style={{backgroudColor: "red"}}
               />
               <button className={Style.pesquisarClient}>Pesquisar</button>
             </Box>

@@ -2,6 +2,8 @@
   display: flex;
   justify-content: space-between;
   padding: 15px;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .Container header h1 {
@@ -43,11 +45,11 @@
 }
 .box{
   display: grid;
-  grid-template-columns: 15% 84%;
-  gap: 15px
+  grid-template-columns: 23% 75%;
+  gap: 8px
 }
 
 #options {
   display: flex;
-  gap: 50px;
+  gap: 10%;
 }
